@@ -6,8 +6,40 @@
     <script src="script/index.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <img src="assets/map_images/inferno.png" id="overviewmap" />
+    <header>
+      <div>
+        <span id="title">
+          CS:GO Radius
+        </span>
+        <span id="damage_legend">
+          <span style="color: green;">0</span>
+          <span style="color: yellow;">25</span>
+          <span style="color: orange;">50</span>
+          <span style="color: red;">100+</span>
+        </span>
+      </div>
+      <div>
+        <label for="cs_map_select">Map</label>
+        <select id="cs_map_select" name="cs_map_select">
+          <option value="">… Choose a map</option>
+          <option value="de_cache">Cache</option>
+          <option value="de_inferno">Inferno</option>
+          <option value="de_dust2">Dust 2</option>
+          <option value="de_mirage">Mirage</option>
+          <option value="de_overpass">Overpass</option>
+          <option value="de_nuke">Nuke</option>
+          <option value="de_train">Train</option>
+        </select>
+        <span id="map_stats">
+          <label for="damage_display">Damage</label>
+          <span id="damage_display"></span>
+          <label for="radius_display">Radius</label>
+          <span id="radius_display"></span>
+        </span>
+      </div>
+    </header>
+    <div id="map_container">
+      <img src="" id="overviewmap" />
       <div class="radius radius0"></div>
       <div class="radius radius1"></div>
       <div class="radius radius2"></div>

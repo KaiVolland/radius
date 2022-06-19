@@ -1,17 +1,35 @@
 html, body {
   width: 100%;
   height: 100%;
-
 }
 
-.container {
+#map_container {
+  display: var(--display, 'none');
   position: relative;
+  --radius0: 0px;
   --radius1: 0px;
   --radius2: 0px;
   --radius3: 0px;
   --radius4: 0px;
-  --x: 0px;
-  --y: 0px;
+  --x: -2000px;
+  --y: -2000px;
+}
+
+#title, #damage_legend {
+  font-size: 2em;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+#damage_legend {
+  display: inline;
+  background-color: #ababab;
+}
+
+#damage_legend span {
+  padding: 0 10px;
 }
 
 .radius {
